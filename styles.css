@@ -15,10 +15,13 @@ body{
 }
 
 .title-image{
-height:275px;
-width: 550px;
-margin-bottom: 25px;
-margin-top: 25px;
+height:300px;
+width: 500px;
+margin-bottom: 15px;
+margin-top: 10px;
+border: solid 2px darkcyan;
+overflow: hidden;
+border-radius: 100px;
 }
 
 h1{
@@ -27,7 +30,7 @@ h1{
 
 .game-container{
     border: 5px solid black;
-    height: 550px;
+    height: 500px;
     width: 1000px;
     display: flex;
     flex-direction: column;
@@ -49,7 +52,26 @@ h1{
 
 .image{
  height: 125px;
- border: solid 2px
+ border: solid 2px;
+ border-radius: 50px;
+
+}
+
+.player-image:hover{
+    height:140px;
+}
+.player{
+    height: 130px;
+    width: 130px;
+    border-radius:65px ;
+
+}
+
+.submit{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid darkcyan;
 }
 
 .player-guess{
@@ -84,3 +106,8 @@ h1{
 
 }
 
+input[type=checkbox] {
+    height: 50px;
+    width: 50px;
+    /* opacity:0 */
+ }

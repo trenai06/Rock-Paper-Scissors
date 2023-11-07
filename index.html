@@ -16,19 +16,31 @@
                 <div class="guess-container"> 
                     <div class="player-guess"> 
                         <h3>Choose One</h3>
-                        <img class="image" src="./Assets/Rock.jpg" alt="Rock">
-                        <img class="image" src="./Assets/Paper.jpg" alt="Paper">
-                        <img class="image" src="./Assets/scissors.png" alt="Scissors">
+                            <label>
+                                <input class="checkbox" type="checkbox" id="Rock" name="Rock">
+                                <img  class="image player-image" src="./Assets/Rock.jpg" alt="Rock">
+                            </label>
+                            <label>
+                                <input class="checkbox" type="checkbox" id="Paper" name="Paper">
+                                <img id="Paper" class="image player-image" src="./Assets/Paper.jpg" alt="Paper">
+                            </label>
+                            <label>
+                                <input class="checkbox" type="checkbox" id="Scissors" name="Scissors">
+                                <img id="Scissors" class="image player-image" src="./Assets/scissors.png" alt="Scissors"> 
+                            </label>
+                       <!-- <button class="player" id="Rock" value="Rock" onclick="rockSelect()"> <img  class="image player-image" src="./Assets/Rock.jpg" alt="Rock"> </button>
+                       <button class="player" onclick="playerSelection()"> <img id="Paper" class="image player-image" src="./Assets/Paper.jpg" alt="Paper"> </button>
+                       <button class="player" onclick="playerSelection()"> <img id="Scissors" class="image player-image" src="./Assets/scissors.png" alt="Scissors"> </button> -->
                     </div>
                     <div class="results">
-                        <h3> Win/Lose/Tied Display </h3>
-                        <button> Submit </button>
+                        <h3 id="submit"> Win/Lose/Tied Display </h3>
+                        <button class="submit" onclick="playerChoice()"> Submit </button>
                     </div>
                     <div class="computer-answer">
                         <h3>Computer Answer</h3>
-                        <img class="image" src="./Assets/Rock.jpg" alt="Rock">
-                        <img class="image" src="./Assets/Paper.jpg" alt="Paper">
-                        <img class="image" src="./Assets/scissors.png" alt="Scissors">
+                         <img class="image computer-image" src="./Assets/Rock.jpg" alt="Rock"> 
+                         <img class="image computer-image" src="./Assets/Paper.jpg" alt="Paper"> 
+                         <img class="image computer-image" src="./Assets/scissors.png" alt="Scissors"> 
                     </div>
                 </div>
         </div>
