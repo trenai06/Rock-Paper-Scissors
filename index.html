@@ -9,35 +9,30 @@
 <body>
     <div class="container">
         <h1> Rock Paper Scissors </h1>
-        <img class="title-image" src="./Assets/Untitled design.jpg" alt="Rock, Paper, Scissors">
+        <img class="title-image" src="./Assets/rock-paper-scissors-2.jpg" alt="Rock, Paper, Scissors">
 
         <div class="game-container"> 
-            <h2> Feeling Lucky? Make a choice and let's see!! </h2>
+          
                 <div class="guess-container"> 
                     <div class="player-guess"> 
                         <h3>Choose One</h3>
-                            <label>
-                                <input class="checkbox" type="checkbox" id="Rock" name="Rock">
-                                <img  class="image player-image" src="./Assets/Rock.jpg" alt="Rock">
-                            </label>
-                            <label>
-                                <input class="checkbox" type="checkbox" id="Paper" name="Paper">
-                                <img id="Paper" class="image player-image" src="./Assets/Paper.jpg" alt="Paper">
-                            </label>
-                            <label>
-                                <input class="checkbox" type="checkbox" id="Scissors" name="Scissors">
-                                <img id="Scissors" class="image player-image" src="./Assets/scissors.png" alt="Scissors"> 
-                            </label>
-                       <!-- <button class="player" id="Rock" value="Rock" onclick="rockSelect()"> <img  class="image player-image" src="./Assets/Rock.jpg" alt="Rock"> </button>
-                       <button class="player" onclick="playerSelection()"> <img id="Paper" class="image player-image" src="./Assets/Paper.jpg" alt="Paper"> </button>
-                       <button class="player" onclick="playerSelection()"> <img id="Scissors" class="image player-image" src="./Assets/scissors.png" alt="Scissors"> </button> -->
+                       <button class="player rock" value="Rock" onclick="buttonCheck(this.value)"> </button>
+                       <button class="player paper" value="Paper" onclick="buttonCheck(this.value)"> </button>
+                       <button class="player scissors" value="Scissors" onclick="buttonCheck(this.value)"> </button>
                     </div>
                     <div class="results">
-                        <h3 id="submit"> Win/Lose/Tied Display </h3>
-                        <button class="submit" onclick="playerChoice()"> Submit </button>
+                        
+                        <h3 id="submit"> Let's see what you got? </h3>
+                        <button class="submit" onclick="gameResults(), gameWinOrLose()"> Submit </button>
+                        <div class="score">
+                            <div id="player-score">0</div>
+                            <div>Score</div>
+                            <div id="computer-score">0</div>
+                        </div>
+                        
                     </div>
                     <div class="computer-answer">
-                        <h3>Computer Answer</h3>
+                        <h3>Computer</h3>
                          <img class="image computer-image" src="./Assets/Rock.jpg" alt="Rock"> 
                          <img class="image computer-image" src="./Assets/Paper.jpg" alt="Paper"> 
                          <img class="image computer-image" src="./Assets/scissors.png" alt="Scissors"> 

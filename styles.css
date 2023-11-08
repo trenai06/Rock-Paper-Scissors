@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: darkcyan;
+    background-color:teal;
 }
 
 .container{
@@ -15,11 +15,11 @@ body{
 }
 
 .title-image{
-height:300px;
+height:220px;
 width: 500px;
 margin-bottom: 15px;
 margin-top: 10px;
-border: solid 2px darkcyan;
+border: solid 2px teal;
 overflow: hidden;
 border-radius: 100px;
 }
@@ -27,6 +27,9 @@ border-radius: 100px;
 h1{
     font-size: 60px;
 }
+
+
+
 
 .game-container{
     border: 5px solid black;
@@ -38,6 +41,9 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    background-color:darkmagenta;
+    font-size: 25px;
+    
 }
 
 .guess-container{
@@ -46,7 +52,7 @@ h1{
     height: 500px;
     width: 850px;
     justify-content: space-between;
-    margin-top: 50px;
+    padding: 20px;
     
 }
 
@@ -54,60 +60,107 @@ h1{
  height: 125px;
  border: solid 2px;
  border-radius: 50px;
-
 }
 
 .player-image:hover{
     height:140px;
 }
+
 .player{
     height: 130px;
     width: 130px;
-    border-radius:65px ;
-
+    border-radius:50px ;
+    border:solid 2px black;
 }
 
-.submit{
-    border-radius: 100px;
-    height: 200px;
-    width: 200px;
-    border: 2px solid darkcyan;
+.rock{
+    background-image: url(Assets/Rock.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
 }
+
+.scissors{
+    background-image: url(Assets/scissors.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: black 2px solid;
+}
+
+.paper{
+    background-image: url(Assets/Paper.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: black 2px solid; 
+}
+
+
 
 .player-guess{
     display:flex;
     flex-direction: column;
     flex-grow:2;
-    /* border: solid 2px; */
     align-items: center;
     height: 450px;
     justify-content: space-between;
+    font-size: 30px;
+    
+    
 }
 
 .results{ 
     display: flex;
     flex-direction:column;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: end;
+    
     align-items: center;
     font-size: 30px;
+    height: 400px;
 }
 
 
 
 .computer-answer{
-    /* border: solid 2px; */
     display:flex;
     flex-direction: column;
     flex-grow: 2;
     align-items: center;
     height: 450px;
     justify-content: space-between;
-
+    font-size: 30px;
 }
 
-input[type=checkbox] {
+.submit{
+    height:100px;
+    width: 140px;
+    border-radius: 65px;
+    border: solid black 3px;
+    background-color:#a189cf;
+    font-size: 25px;
+    font-weight: bold;
+   
+}
+
+#submit{
+    font-size: 35px;
+    padding: 20px;
+    background-color: black;
+    color:darkmagenta;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    height:140px;
+    width: 140px;
+    border: black 5px solid;
+}
+
+.score{
+    display:flex;
     height: 50px;
-    width: 50px;
-    /* opacity:0 */
- }
+    width:300px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
