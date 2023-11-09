@@ -16,14 +16,14 @@
                 <div class="guess-container"> 
                     <div class="player-guess"> 
                         <h3>Choose One</h3>
-                       <button class="player rock" value="Rock" onclick="buttonCheck(this.value)"> </button>
-                       <button class="player paper" value="Paper" onclick="buttonCheck(this.value)"> </button>
-                       <button class="player scissors" value="Scissors" onclick="buttonCheck(this.value)"> </button>
+                       <button class="player rock" id="rock" value="Rock" onclick="buttonCheck(this.value), textReset(), rockSelect()" onblur="document.getElementById('rock').style.border = 'solid black 2px'"> </button>
+                       <button class="player paper" id="paper" value="Paper" onclick="buttonCheck(this.value), textReset(), paperSelect()" onblur="document.getElementById('paper').style.border = '2px solid black'"> </button>
+                       <button class="player scissors" id="scissors" value="Scissors" onclick="buttonCheck(this.value), textReset(), scissorsSelect()" onblur="document.getElementById('scissors').style.border = '2px solid black'"> </button>
                     </div>
                     <div class="results">
                         
                         <h3 id="submit"> Let's see what you got? </h3>
-                        <button class="submit" onclick="gameResults(), gameWinOrLose()"> Submit </button>
+                        <button class="submit" onclick="gameResults(), arrayPop(), gameWinOrLose()"> Submit </button>
                         <div class="score">
                             <div id="player-score">0</div>
                             <div>Score</div>
@@ -33,9 +33,9 @@
                     </div>
                     <div class="computer-answer">
                         <h3>Computer</h3>
-                         <img class="image computer-image" src="./Assets/Rock.jpg" alt="Rock"> 
-                         <img class="image computer-image" src="./Assets/Paper.jpg" alt="Paper"> 
-                         <img class="image computer-image" src="./Assets/scissors.png" alt="Scissors"> 
+                         <img class="image computer-image" id="Rock" src="./Assets/Rock.jpg" alt="Rock"> 
+                         <img class="image computer-image" id="Paper" src="./Assets/Paper.jpg" alt="Paper"> 
+                         <img class="image computer-image" id="Scissors" src="./Assets/scissors.png" alt="Scissors"> 
                     </div>
                 </div>
         </div>
