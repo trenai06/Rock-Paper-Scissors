@@ -5,6 +5,8 @@
 
 body{
     background-color:teal;
+    font-family: 'Sulphur Point', sans-serif;
+    font-style: italic;
 }
 
 .container{
@@ -25,7 +27,8 @@ border-radius: 100px;
 }
 
 h1{
-    font-size: 60px;
+    font-size:95px;
+  
 }
 
 
